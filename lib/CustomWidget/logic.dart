@@ -1,7 +1,6 @@
 String? temps = "";
 String? input = "";
 double result = 0.0;
-double? temp;
 String? sign;
 String? sign2;
 void nine() {
@@ -82,10 +81,8 @@ void equal() {
   equals();
 }
 
-void parse() => temp = double.parse(temps.toString());
 void cTemps() => temps = "";
 void add() {
-  parse();
   input = "${input ?? ""}+";
   sign2 = '+';
   equals();
@@ -93,7 +90,6 @@ void add() {
 }
 
 void sub() {
-  parse();
   input = "${input ?? ""}-";
   sign2 = '-';
   equals();
@@ -101,7 +97,6 @@ void sub() {
 }
 
 void mul() {
-  parse();
   input = "${input ?? ""}*";
   sign2 = '*';
   equals();
@@ -109,7 +104,6 @@ void mul() {
 }
 
 void div() {
-  parse();
   input = "${input ?? ""}/";
   sign2 = '/';
   equals();
@@ -117,7 +111,6 @@ void div() {
 }
 
 void per() {
-  parse();
   input = "${input ?? ""}%";
   sign2 = '%';
   equals();
@@ -126,7 +119,6 @@ void per() {
 
 void ac() {
   result = 0;
-  temp = 0;
   temps = "";
   input = "";
 }
