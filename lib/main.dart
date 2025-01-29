@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   RoundedButton(
                     bgColor: Colors.grey.shade900,
                     btnName: Text(
-                      'AM',
+                      'AS',
                       style: TextStyle(fontSize: 40),
                     ),
                     radius: 40.0,
